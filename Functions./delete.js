@@ -2,7 +2,7 @@
 
 // Set up:
 
-var author = ['emilio salgari', 'julio verne', 'bob dylan','garcia marquez']
+var authors = ['emilio salgari', 'julio verne', 'bob dylan','garcia marquez']
 
 function deleteAuthor(position) {
 authors.splice(position, 1);
