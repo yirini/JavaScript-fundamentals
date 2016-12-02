@@ -1,4 +1,4 @@
-// Clicking "Toggle all" should run authorList.toggleAll
+// clicking "Toggle all" should run authorList.toggleAll
 var authorList = {
   authors:[],
   displayAuthors:function() {
