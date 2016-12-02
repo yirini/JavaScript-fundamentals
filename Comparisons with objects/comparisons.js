@@ -1,4 +1,4 @@
-// Comparisons with objects
+// comparisons with objects
 
 var authorB = {};
 authorB === authorB
