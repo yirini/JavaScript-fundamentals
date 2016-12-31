@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Author List Version 11</title>
+
+        <link href="index.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+
+    <h1>Author List</h1>
+
+    <div>
+      <button onclick="handlers.toggleAll()">Toggle All</button>
+    </div>
+
+    <div>
+      <button onclick = "handlers.addAuthor()">Add</button>
+      <input id = "addAuthorTextInput" type = "text">
+    </div>
+
+     <div>
+      <button onclick="handlers.changeAuthor()">Change Author</button>
+      <input id ="changeAuthorPositionInput" type="number">
+      <input id ="changeAuthorTextInput" type="text">
+     </div>
+
+      <div>
+        <button onclick = "handlers.toggleCompleted()">Toggle Completed</button>
+        <input id ="toggleCompletedPositionInput" type="number">
+      </div>
+
+      <ul>
+      </ul>
+
+
+    <script src="index.js"></script>
+    </body>
+
+</html>
