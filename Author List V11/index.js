@@ -52,7 +52,7 @@
    var changeAuthorPositionInput = document.getElementById('changeAuthorPositionInput');
    var changeAuthorTextInput = document.getElementById('changeAuthorTextInput');
    authorList.changeAuthor(changeAuthorPositionInput.valueAsNumber, changeAuthorTextInput.value);
-   changeAuthorPositionTextInput.value ='';
+   changeAuthorPositionInput.value ='';
    changeAuthorTextInput.value ='';
    view.displayAuthors();
  },
@@ -91,8 +91,9 @@
     authorLi.textContent = authorTextWithCompletion;
     authorLi.appendChild(this.createDeleteButton());
     authorsUl.appendChild(authorLi);
-    }, this); // Passing this as a second argument becoming equal to the view object:
+    // Passing this as a second argument becoming equal to the view object:
     // forEach(callback, this)
+    }, this);
     },
 
     createDeleteButton: function() {
